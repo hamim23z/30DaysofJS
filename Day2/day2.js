@@ -265,3 +265,65 @@ console.log(concat1.concat(' Javascript'))
 
 //Number TwentyFive//
 console.log(challenge.repeat(2))
+
+
+//LEVEL TWO EXERCISES//
+//Number One//
+let beginning = 'The quote'
+let actualquote = ' `There is no exercise better for the heart than reaching down and lifting people up.`'
+let end = ' by John Holmes teaches us to help one another.'
+console.log(beginning + actualquote + end)
+
+//Number Two//
+let entirequote = `"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."`
+console.log(entirequote)
+
+//Number Three//
+val1 = '10'
+val2 = 10
+console.log(typeof val1==val2)
+
+//Number Four//
+let four = '9.81'
+let fourparse = parseFloat(four)
+console.log(fourparse)
+
+//Number Five//
+let idea1 = 'python'
+let idea2 = 'jargon'
+console.log(idea1.includes('on'))
+console.log(idea2.includes('on'))
+
+//Number Six//
+let anothersentence = 'I hope this course is not full of jargon'
+console.log(anothersentence.includes('jargon'))
+
+//Number Seven//
+let numberseven = Math.random()
+let randomzerotohundred = numberseven*101
+let final = Math.floor(randomzerotohundred)
+console.log(final)
+
+//Number Eight//
+let numbereight = Math.floor(Math.random() * (100 - 50 + 1)) + 50;
+console.log(numbereight)
+
+//Number Nine//
+let numbernine = Math.random()
+let randomzerototwohundredfiftyfive = numberseven*256
+let final2 = Math.floor(randomzerototwohundredfiftyfive)
+console.log(final2)
+
+//Number Ten//
+let yahoo = 'Javascript'
+console.log(yahoo.charAt(4))
+
+//Number Eleven//
+console.log('1\t1\t1\t1')
+console.log('2\t1\t2\t4\t8')
+console.log('3\t1\t3\t9\t27')
+console.log('4\t1\t4\t16\t64')
+console.log('5\t1\t5\t25\t125')
+
+//Number Twelve//
+console.log(sentence1.substr(31,24))
