@@ -169,3 +169,28 @@ console.log(now1.getFullYear())
 //Month//
 let now2 = new Date()
 console.log(now2.getMonth())
+
+
+
+//LEVEL ONE EXERCISES//
+//Number One//
+let myfirstname = 'Hamim'
+let mylastname = 'Choudhury'
+let country = 'United States'
+let city = 'New York City'
+let myage = 19
+let ismarried = false
+console.log(typeof(myfirstname))
+console.log(typeof(mylastname))
+console.log(typeof(country))
+console.log(typeof(city))
+console.log(typeof(myage))
+console.log(typeof(ismarried))
+
+//Number Two and Number Three are the same problems from Day Number 2, so I skipped them.//
+
+//Number Four//
+let bool1 = true
+let bool2 = false
+console.log(bool1)
+console.log(bool2)
