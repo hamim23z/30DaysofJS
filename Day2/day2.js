@@ -327,3 +327,24 @@ console.log('5\t1\t5\t25\t125')
 
 //Number Twelve//
 console.log(sentence1.substr(31,24))
+
+
+
+
+
+//LEVEL THREE EXERCISES//
+//Number One//
+let sentence2 = 'Love is the best thing in this world. Some found their love and some are still looking for their love.'
+const wordToCount1 = "love";
+const regex1 = new RegExp('\\b' + wordToCount1 + '\\b', 'gi');
+const count1 = (sentence2.match(regex1) || []).length;
+
+console.log(`The word "${wordToCount1}" appears ${count1} times in the sentence.`);
+
+//Number Two//
+const wordToCount = "because";
+const regex = new RegExp('\\b' + wordToCount + '\\b', 'gi');
+const count = (sentence1.match(regex) || []).length;
+console.log(`The word "${wordToCount}" appears ${count} times in the sentence.`);
+
+//Skipped Number Three and Four for now, will come back to it later.//
