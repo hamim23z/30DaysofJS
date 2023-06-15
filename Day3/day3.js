@@ -194,3 +194,52 @@ let bool1 = true
 let bool2 = false
 console.log(bool1)
 console.log(bool2)
+
+//Number Five//
+/*
+1. True
+2. True
+3. False
+4. False
+5. True 
+6. True
+7. False
+8. False
+9. True
+10. True
+11. False*/
+
+//Number Six//
+/*
+1. True
+2. False
+3. True
+4. True
+..... */
+
+//Number Seven//
+let todayyear = new Date()
+console.log(todayyear.getFullYear())
+
+let todaymonth = new Date()
+console.log(todaymonth.getMonth() + 1)
+
+let todaydate = new Date()
+console.log(todaydate.getDate())
+
+let todayday = new Date()
+console.log(todayday.getDay())
+
+let todayhours = new Date()
+console.log(todayhours.getHours())
+
+let todayminutes = new Date()
+console.log(todayminutes.getMinutes())
+
+let todayseconds = new Date()
+console.log(todayseconds.getTime())
+
+
+
+
+//LEVEL TWO EXERCISES//
