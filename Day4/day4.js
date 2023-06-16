@@ -115,3 +115,15 @@ switch (day) {
     default:
         console.log('Double check your spelling.')
 }
+
+
+//LEVEL ONE EXERCISES//
+//Number One//
+
+let userinputage = prompt('Enter your age. ')
+if (userinputage >= 18) {
+    console.log('You are old enough to drive. ')
+} else {
+    let yearstowait = 18 - userinputage
+    console.log('You are not yet old enough to drive. You need to wait ' + yearstowait +' more years.')
+}
