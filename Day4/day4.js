@@ -144,3 +144,12 @@ if (a > b) {
 } else {
     console.log(a + ' is less than ' + b)
 }
+
+
+//Number Four//
+let enternumber = prompt('Please enter a number: ')
+if (enternumber % 2 === 0 ) {
+    console.log(enternumber + ' is an even number.')
+} else {
+    console.log(enternumber + ' is an odd number.')
+}
