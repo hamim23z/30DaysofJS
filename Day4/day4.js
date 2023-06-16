@@ -127,3 +127,10 @@ if (userinputage >= 18) {
     let yearstowait = 18 - userinputage
     console.log('You are not yet old enough to drive. You need to wait ' + yearstowait +' more years.')
 }
+
+
+//Number Two//
+let youragenow = prompt('Enter your age: ')
+let myagenow = 19
+let compareages = youragenow - myagenow
+console.log('You are ' + compareages + ' years older than me.')
