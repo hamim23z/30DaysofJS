@@ -153,3 +153,84 @@ if (enternumber % 2 === 0 ) {
 } else {
     console.log(enternumber + ' is an odd number.')
 }
+
+
+
+
+//LEVEL TWO EXERCISES//
+//Number One//
+let testscore = prompt('Enter your test grade to calculate your letter grade: ')
+if (testscore >= 80 && testscore <= 100) {
+    console.log('A')
+} else if (testscore >= 70 && testscore <= 89) {
+    console.log('B')
+} else if (testscore >= 60 && testscore <= 69) {
+    console.log('C')
+} else if (testscore >= 50 && testscore <= 59) {
+    console.log('D')
+} else if (testscore >- 0 && testscore <= 49) {
+    console.log('F')
+} else {
+    console.log('If you receieved a decimal grade, just round up.')
+}
+
+
+
+//Number Two//
+let seasoninput = prompt('Enter a month to find the season: ')
+let season = seasoninput.toLowerCase()
+
+switch(season) {
+    case 'january':
+        console.log('The season is WINTER.')
+        break
+    
+    case 'february':
+        console.log('The season is WINTER.')
+        break
+
+    case 'march':
+        console.log('The season is SPRING')
+        break
+
+    case 'april':
+        console.log('The season is SPRING')
+        break
+
+    case 'may':
+        console.log('The season is SPRING')
+        break
+
+    case 'june':
+        console.log('The season is SUMMER')
+        break
+    
+    case 'july':
+        console.log('The season is SUMMER')
+        break
+    
+    case 'august':
+        console.log('The season is SUMMER')
+        break
+    
+    case 'september':
+        console.log('The season is AUTUMN')
+        break
+
+    case 'october':
+        console.log('The season is AUTUMN')
+        break
+    
+    case 'november':
+        console.log('The season is AUTUMN')
+        break
+
+    case 'december':
+        console.log('The season is WINTER')
+        break
+    
+    default:
+        console.log('Enter a correct month.')
+
+}
+
