@@ -271,3 +271,61 @@ switch (daysinput) {
     default:
         console.log('Please check your spelling, this is case sensitive!')
 }
+
+
+//LEVEL THREE EXERCISES//
+let userinputmonth = prompt('Enter the month to find the number of days: ')
+let monthinput = userinputmonth.toLowerCase()
+
+switch (monthinput) {
+    case 'january':
+        console.log('January has 31 days.')
+        break
+
+    case 'february':
+        console.log('February is a tricky month. February typically has 28 days but on leap years it has 29 days. Leap years happen every 4 years.')
+        break
+
+    case 'march':
+        console.log('March has 31 days.')
+        break
+
+    case 'april':
+        console.log('April has 30 days.')
+        break
+
+    case 'may':
+        console.log('May has 31 days.')
+        break
+
+    case 'june':
+        console.log('June has 30 days.')
+        break
+
+    case 'july':
+        console.log('July has 31 days.')
+        break
+    
+    case 'august':
+        console.log('August has 31 days.')
+        break
+    
+    case 'september':
+        console.log('September has 30 days.')
+        break
+
+    case 'october':
+        console.log('October has 31 days.')
+        break
+    
+    case 'november':
+        console.log('November has 30 days.')
+        break
+
+    case 'december':
+        console.log('December has 31 days.')
+        break
+    
+    default:
+        console.log('Double check your spelling and enter a MONTH please.')
+}
