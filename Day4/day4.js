@@ -234,3 +234,40 @@ switch(season) {
 
 }
 
+
+//Number Three//
+let userinputdays = prompt('Enter a day to decide if its weekend or working: ')
+let daysinput = userinputdays.toLowerCase()
+
+switch (daysinput) {
+    case 'monday':
+        console.log('Monday is a working day')
+        break
+
+    case 'tuesday':
+        console.log('Tuesday is a working day')
+        break
+
+    case 'wednesday':
+        console.log('Wednesday is a working day')
+        break
+    
+    case 'thursday':
+        console.log('Thuesday is a working day')
+        break
+
+    case 'friday':
+        console.log('Friday is a working day')
+        break
+
+    case 'saturday':
+        console.log('Saturday is a weekend')
+        break
+    
+    case 'sunday':
+        console.log('Sunday is a weekend')
+        break
+    
+    default:
+        console.log('Please check your spelling, this is case sensitive!')
+}
