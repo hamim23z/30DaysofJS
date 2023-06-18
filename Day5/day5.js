@@ -147,3 +147,64 @@ let frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 let backEnd = ['Node','Express', 'MongoDB']
 let fullStack = [frontEnd, backEnd]
 console.log(fullStack)
+
+
+
+
+
+//LEVEL ONE EXERCISES//
+//Number One//
+let emptyarrayagain = []
+console.log(emptyarrayagain)
+
+//Number Two//
+let declarearray = [1, 2, 3, 4, 5]
+
+//Number Three//
+console.log(declarearray.length)
+
+//Number Four//
+let firstitem1 = declarearray[0]
+let seconditem1 = declarearray[2]
+let thirditem1 = declarearray[4]
+console.log(firstitem1)
+console.log(seconditem1)
+console.log(thirditem1)
+
+//Number Five//
+let mixedDataTypes = [
+    'Hello',
+    20,
+    false,
+    true,
+    'Goodbye',
+    ['This is cool']
+]
+console.log(mixedDataTypes.length)
+
+//Number Six//
+let itCompanies= ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+//Number Seven//
+console.log(itCompanies)
+
+//Number Eight//
+console.log(itCompanies.length)
+
+//Number Nine//
+let firstcomp = itCompanies[0]
+let secondcomp = itCompanies[3]
+let thirdcomp = itCompanies[6]
+console.log(firstcomp)
+console.log(secondcomp)
+console.log(thirdcomp)
+
+//Number Ten//
+let comp1 = itCompanies[0]
+let comp2 = itCompanies[1]
+let comp3 = itCompanies[2]
+let comp4 = itCompanies[3]
+let comp5 = itCompanies[4]
+let comp6 = itCompanies[5]
+let comp7 = itCompanies[6]
+console.log(comp1 + comp2 + comp3 + comp4 + comp5 + comp6 + comp7) //it's just repetitive when I print console.log every line//
