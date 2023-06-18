@@ -243,3 +243,7 @@ console.log(todayseconds.getTime())
 
 
 //LEVEL TWO EXERCISES//
+//Number One//
+let userinputbase = prompt('Enter base (must be a number): ')
+let userinputheight = prompt('Enter height (must be a number): ')
+console.log('The area of the triangle is ' + userinputbase * userinputheight * 0.5)
