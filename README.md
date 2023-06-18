@@ -15,4 +15,4 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 
 6/17/23: Completed Level Three Exercise Problems from Day 4. I also revised my code for Level Two Exercise Problems (specifically #3). 
 
-6/18/23: 
+6/18/23: Completed Dat 5 of the course.
