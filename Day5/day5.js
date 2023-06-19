@@ -208,3 +208,61 @@ let comp5 = itCompanies[4]
 let comp6 = itCompanies[5]
 let comp7 = itCompanies[6]
 console.log(comp1 + comp2 + comp3 + comp4 + comp5 + comp6 + comp7) //it's just repetitive when I print console.log every line//
+
+//Number Eleven//
+itCompanies[0] = 'FACEBOOK'
+itCompanies[1] = 'GOOGLE'
+itCompanies[2] = 'MICROSOFT'
+itCompanies[3] = 'APPLE'
+itCompanies[4] = 'IBM'
+itCompanies[5] = 'ORACLE'
+itCompanies[6] = 'AMAZON'
+console.log(itCompanies)
+
+//Number Twelve//
+console.log(itCompanies + ' are big IT companies.')
+
+//Number Thirteen//
+let itCompanies2= ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+if (itCompanies2.includes('Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon')) {
+    console.log('The company is found in this list.')
+} else {
+    console.log('The company is not in this list.')
+}
+
+//Number Fourteen//
+
+
+//Number Fifteen//
+console.log(itCompanies.sort())
+
+itCompanies.sort()
+console.log(itCompanies)
+
+//Number Sixteen//
+console.log(itCompanies.reverse())
+
+//Number Seventeen//
+console.log(itCompanies.slice(0, 3)) //still using the reverse function, so answer may vary
+
+//Number Eighteen//
+console.log(itCompanies.slice(4, 7)) //still using the reverse function, so answer may vary
+
+//Number Nineteen//
+console.log(itCompanies.slice(3, 4)) //still using the reverse function, so answer may vary
+
+//Number Twenty//
+itCompanies.shift()
+console.log(itCompanies)
+
+//Number Twenty One//
+itCompanies.splice(3,4)
+console.log(itCompanies)
+
+//Number Twenty Two//
+itCompanies.pop()
+console.log(itCompanies)
+
+//Number Twenty Three//
+itCompanies = []
+console.log(itCompanies)
