@@ -247,3 +247,27 @@ console.log(todayseconds.getTime())
 let userinputbase = prompt('Enter base (must be a number): ')
 let userinputheight = prompt('Enter height (must be a number): ')
 console.log('The area of the triangle is ' + userinputbase * userinputheight * 0.5)
+
+//Number Two//
+let userinputsidea = prompt('Enter length of side a: ')
+let userinputsideb = prompt('Enter length of side b: ')
+let userinputsidec = prompt('Enter length of side c: ')
+let perimtertriangle = userinputsidea + userinputsideb + userinputsidec
+console.log('The perimeter of the triangle is ' + perimtertriangle)
+
+//Number Three//
+let userinputlength = prompt('Enter the length of your rectangle: ')
+let userinputwidth = prompt('Enter the width of your rectangle: ')
+let arearectangle = userinputlength*userinputwidth
+console.log('The area of the rectangle is ' + arearectangle)
+
+let perimeterrectangle = 2*userinputlength+userinputwidth
+console.log('The perimter of the rectangle is ' + perimeterrectangle)
+
+//Number Four//
+let userinputradius = prompt('Enter the radius of the circle')
+let areacircle = Math.PI * userinputradius * userinputradius
+console.log('The area of the circle is ' + areacircle)
+
+let circumference = 2 * Math.PI * userinputradius
+console.log('The circumference of the circle is ' + circumference)
