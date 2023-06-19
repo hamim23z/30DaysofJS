@@ -308,3 +308,12 @@ const frontEnd1 = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd1 = ['Node','Express', 'MongoDB']
 const fullStack1 = frontEnd1.concat(backEnd1)
 console.log(fullStack1)
+
+//LEVEL THREE EXERCISES//
+//Number One//
+let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+console.log(ages.sort())
+console.log(Math.min(19, 22, 19, 24, 20, 25, 26, 24, 25, 24))
+console.log(Math.max(19, 22, 19, 24, 20, 25, 26, 24, 25, 24))
+
+//Skipping the rest because it's repetitive//
