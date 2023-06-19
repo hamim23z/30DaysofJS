@@ -266,3 +266,45 @@ console.log(itCompanies)
 //Number Twenty Three//
 itCompanies = []
 console.log(itCompanies)
+
+//LEVEL TWO EXERCISES//
+//Number One//
+//Done//
+
+//Number Two//
+let words7 = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+console.log(words7)
+console.log(words7.length)
+
+//Number Three//
+let shoppingcart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingcart.unshift('Meat') 
+console.log(shoppingcart)
+
+shoppingcart.push('Sugar')
+console.log(shoppingcart)
+
+shoppingcart[3] = 'Green Tea'
+console.log(shoppingcart)
+
+//Number Four//
+/*if (countries.includes('Ethiopia')) {
+    console.log('ETHIOPIA')
+  } else {
+    console.log('Ethiopia has been added')
+  } */  //actual work is in countries.js//
+
+
+//Number Five//
+/*if (webTechs.includes('Sass')) {
+  console.log('Sass is a CSS preprocess.')
+} else {
+  webTechs.push('Sass')
+  console.log(webTechs)
+} */  //actual work is in webtechs.js//
+
+//Number Six//
+const frontEnd1 = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd1 = ['Node','Express', 'MongoDB']
+const fullStack1 = frontEnd1.concat(backEnd1)
+console.log(fullStack1)
