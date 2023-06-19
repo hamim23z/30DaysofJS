@@ -271,3 +271,17 @@ console.log('The area of the circle is ' + areacircle)
 
 let circumference = 2 * Math.PI * userinputradius
 console.log('The circumference of the circle is ' + circumference)
+
+//Number Nine//
+let userinputhoursworked = prompt('Enter the total amount of hours you worked this week: ')
+let userinputwage = prompt('Enter how much you make per hour: ')
+let weeklyearning = userinputhoursworked * userinputwage
+console.log('Your weekly earning is $' + weeklyearning)
+
+//Number Ten//
+let userinputname = prompt('Please enter your first name: ')
+if (userinputname.length > 7 ) {
+  console.log('Your name is long')
+} else {
+  console.log('Your name is short')
+}
