@@ -285,3 +285,18 @@ if (userinputname.length > 7 ) {
 } else {
   console.log('Your name is short')
 }
+
+//Number Eleven//
+let myfirst = 'Hamim'
+let mylast = 'Choudhury'
+if (myfirst.length > mylast.length) {
+  console.log('Your first name is longer than your family name.')
+} else {
+  console.log('Your family name is longer than your first name.')
+}
+
+//Number Twelve//
+let myageagain = 19
+let anotherage = 18
+let agedifference = myageagain - anotherage
+console.log('I am ' + agedifference + ' years older than you.')
