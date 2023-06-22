@@ -31,3 +31,80 @@ for(let let5 = 0; let5 < numberz.length; let5++){
   newaarr.push( numberz[let5] ** 2)
 
 } console.log(newaarr)
+
+//While Loops//
+let a = 0
+while (a<=5) {
+    console.log(a)
+    a++
+} //will print out: 0 1 2 3 4 5
+
+let b = 5
+while (b>=0) {
+    console.log(b)
+    b--
+} //will print out: 5 4 3 2 1 0
+
+
+
+//Do While Loops//
+let c = 0
+do {
+    console.log(c)
+    c++
+} while (c<=5)
+
+let d = 5
+do {
+    console.log(d)
+    d--
+} while (d>=0)
+
+
+
+//For Of Loop//
+/* for (const element of arr) {
+  // code goes here
+} */
+
+let morenumbers = [1, 2, 3, 4, 5]
+for(let num of morenumbers) {
+    console.log(num)
+}
+
+for(let num of morenumbers) {
+    console.log(num*num)
+}
+
+
+let techlanguages = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redox',
+    'Node',
+    'MongoDBB'
+]
+for (let tech of techlanguages) {
+    console.log(tech.toUpperCase())
+}
+
+
+
+//Break: Used to interrupt a loop//
+for (let e = 0; e<=5; e++) {
+    if (e===3) {
+        break
+    }
+    console.log(e)
+} //if the number 3 is found, it stops before
+
+
+//Continue: the opposite, it is used to skip certain iterations//
+for(let f = 0; f <= 5; f++){
+    if(f == 3){
+      continue
+    }
+    console.log(f)
+  }
