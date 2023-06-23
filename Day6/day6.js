@@ -129,3 +129,21 @@ do {
     console.log(y)
     y++
 } while (y<=10)
+
+
+//Number Two//
+for(let i=10; i>=0; i--) {
+    console.log(i)
+}
+
+let x = 10
+while (x>=0) {
+    console.log(x)
+    x--
+}
+
+let w = 10
+do {
+    console.log(w)
+    w--
+} while(w>=0)
