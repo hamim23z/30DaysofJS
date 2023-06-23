@@ -149,6 +149,11 @@ do {
 } while(w>=0)
 
 
+//Number Three//
+
+
+
+
 //Number Four//
 for(let i = 1; i<=7; i++) {
     console.log('#'.repeat(i))
@@ -165,3 +170,30 @@ for (let i=0; i<=10; i++) {
 for (let i=0; i<=10; i++) {
     console.log(`${i} ${i*i} ${i*i*i}`)
 }
+
+//Number Seven//
+for (let i=0; i<=100; i++) {
+    if (i%2 == 0) {
+        console.log(i)
+    }
+}
+
+//Number Eight//
+for (let i=0; i<=100; i++) {
+    if (i%2 !== 0) {
+        console.log(i)
+    }
+}
+
+
+//Number Nine//
+
+
+
+//Number Ten//
+let sumOfNumbers = 0
+for (let num = 0; num <= 100; num++) {
+  sumOfNumbers = sumOfNumbers + num;
+}
+
+console.log("The sum of all numbers from 0 to 100 is:", sumOfNumbers);
