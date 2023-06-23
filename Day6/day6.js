@@ -111,3 +111,21 @@ for(let f = 0; f <= 5; f++){
 
 console.log('Hello. Exercises are below.')
 
+
+//LEVEL ONE EXERCISES//
+//Number One//
+for (let i=0; i<=10; i++) {
+    console.log(i)
+}
+
+let z = 0
+while (z<=10) {
+    console.log(z)
+    z++
+}
+
+let y = 0
+do {
+    console.log(y)
+    y++
+} while (y<=10)
