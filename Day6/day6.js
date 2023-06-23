@@ -147,3 +147,21 @@ do {
     console.log(w)
     w--
 } while(w>=0)
+
+
+//Number Four//
+for(let i = 1; i<=7; i++) {
+    console.log('#'.repeat(i))
+}
+
+
+//Number Five//
+for (let i=0; i<=10; i++) {
+    console.log(`${i} * ${i} = ${i*i} `)
+}
+
+
+//Number Six//
+for (let i=0; i<=10; i++) {
+    console.log(`${i} ${i*i} ${i*i*i}`)
+}
