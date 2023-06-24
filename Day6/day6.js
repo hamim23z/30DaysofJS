@@ -272,7 +272,35 @@ for (let i=0; i<newcountries.length; i++) {
 console.log(countrylength)
 
 
+
 //Number Seven//
-if (newcountries.includes('land')) {
-    console.log('')
+let countriesWithLand = [];
+for (let i = 0; i < newcountries.length; i++) {
+  if (newcountries[i].includes('land')) {
+    countriesWithLand.push(newcountries[i]);
+  }
 }
+
+if (countriesWithLand.length > 0) {
+  console.log(countriesWithLand);
+} else {
+  console.log('All these countries are without land');
+}
+
+
+//Number Nine//
+let longestCountry = ''
+for (let i = 0; i < newcountries.length; i++) {
+    if (newcountries[i].length > longestCountry.length) {
+      longestCountry = newcountries[i];
+    }
+  } console.log(longestCountry);
+
+
+//Number Ten//
+let countrieswithfive = []
+for (let i = 0; i < newcountries.length; i++) {
+    if (newcountries[i].length === 5) {
+      countrieswithfive.push(newcountries[i]);
+    }
+  } console.log(countrieswithfive);
