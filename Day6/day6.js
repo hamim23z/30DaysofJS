@@ -234,3 +234,45 @@ for (let i=0; i<6; i++) {
     id = id + randomchar2
 }
 console.log(id)
+
+
+
+//LEVEL TWO EXERCISES//
+//Number One//
+let allchar2 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+let id2 = ''
+for (let i=0; i<=10000000; i++) {
+    let randomindex2 = Math.random() * allchar2.length
+    let randomchar22 = allchar2.charAt(randomindex2)
+    id2 = id2 + randomchar22
+}
+console.log(id2)
+
+
+//Number Two//
+let hexadecimal = '#'
+let char3 = 'abcdef1234567890'
+for (let i=0; i<6; i++) {
+    let randomindex3 = Math.floor(Math.random() * char3.length)
+    hexadecimal = hexadecimal + char3.charAt(randomindex3)
+}
+console.log(hexadecimal)
+
+
+//Number Four//
+let newcountries = ["ALBANIA", "BOLIVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+console.log([newcountries[0].length, newcountries[1].length, newcountries[2].length, newcountries[3].length, newcountries[4].length])
+
+
+//Number Five//
+let countrylength = []
+for (let i=0; i<newcountries.length; i++) {
+    countrylength.push(newcountries[i].length)
+}
+console.log(countrylength)
+
+
+//Number Seven//
+if (newcountries.includes('land')) {
+    console.log('')
+}
