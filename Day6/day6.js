@@ -197,3 +197,40 @@ for (let num = 0; num <= 100; num++) {
 }
 
 console.log("The sum of all numbers from 0 to 100 is:", sumOfNumbers);
+
+
+//Number Eleven//
+let totaleven = 0
+let totalodd = 0
+for (let i=0; i<=100; i++) {
+    if (i%2==0) {
+        console.log(totaleven = totaleven+i)
+    } else if (i%2 !== 0) {
+        console.log(totalodd = totalodd+i)
+    }
+}
+console.log('The sum of even numbers from 0 to 100 is: ' + totaleven)
+console.log('The sum of odd numbers from 0 to 100 is: ' + totalodd)
+
+
+//Number Twelve//
+console.log([totaleven, totalodd])
+
+
+//Number Thirteen and Fourteen//
+let array22 = []
+for (let i = 0; i < 5; i++) {
+    let randomNumber = Math.floor(Math.random() * 100)
+    array22.push(randomNumber);
+  } 
+console.log(array22);
+
+//Number Fifteen//
+let allchar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+let id = ''
+for (let i=0; i<6; i++) {
+    let randomindex = Math.random() * allchar.length
+    let randomchar2 = allchar.charAt(randomindex)
+    id = id + randomchar2
+}
+console.log(id)
