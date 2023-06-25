@@ -80,3 +80,29 @@ function squaringnumbers(s) {
     return exponents
 }
 console.log(squaringnumbers(20)) //the same process as above, we put something in the function and we return it (return what we want to solve) and finally we console.log it with an official value//
+
+
+
+
+
+
+
+//Function with Parameters(Two Parameters)
+/* function functionName(parm1, parm2) {
+  //code goes here
+}
+functionName(parm1, parm2) */
+
+
+function sumoftwonumbers(numuno, numdos) {
+    let totalsumagain = numuno + numdos
+    console.log(totalsumagain)
+}
+sumoftwonumbers(40, 40) //so the overall process is the same as a function with one parameter. but in this case, we put two values in the function and then we return or console.log it. however we have to call the function at the end with values//
+
+
+function sumtwonumbers(numberone, numbertwo) {
+    let sum = numberone + numbertwo
+    return sum
+}
+console.log(sumtwonumbers(40, 50)) //this is another way to do it with return//
