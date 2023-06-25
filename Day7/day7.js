@@ -86,7 +86,6 @@ console.log(squaringnumbers(20)) //the same process as above, we put something i
 
 
 
-
 //Function with Parameters(Two Parameters)
 /* function functionName(parm1, parm2) {
   //code goes here
@@ -132,6 +131,8 @@ console.log(sumarrayvalues(morenumbers))
 
 
 
+
+
 //Funtion with Unlimited Parameters (With Regular Function)//
 function sumallnums() {
     console.log(arguments)
@@ -152,7 +153,9 @@ console.log(sumallnumsagain(1, 1, 1, 1, 1))
 
 
 
-//Funtion with Unlimited Parameters (With Arrow Function)//
+
+
+//Function with Unlimited Parameters (With Arrow Function)//
 /* const sumAllNums = (...args) => {
  // console.log(arguments), arguments object not found in arrow function
  // instead we use a parameter followed by spread operator (...)
@@ -187,6 +190,8 @@ console.log(anonymousfunc)
 
 
 
+
+
 //Expression Funtions. Anon functions that are assigned to a variable//
 let squareagain = function(n) {
     return n*n
@@ -197,11 +202,13 @@ console.log(squareagain(4))
 
 
 
+
 //Self Invoking Functions//
 let squarednum = (function(n) {
     return n*n
 })(10)
 console.log(squarednum)
+
 
 
 
@@ -220,7 +227,6 @@ let squared2 = d => {
     return d * d
 }
 console.log(squared2(9))
-
 
 
 
@@ -252,6 +258,7 @@ function calculateAge(birthYear, currentYear = 2023) {
     return age
 }
 console.log('Age: ', calculateAge(2004))
+
 
 
 
