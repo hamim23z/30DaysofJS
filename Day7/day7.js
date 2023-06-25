@@ -106,3 +106,99 @@ function sumtwonumbers(numberone, numbertwo) {
     return sum
 }
 console.log(sumtwonumbers(40, 50)) //this is another way to do it with return//
+
+
+
+
+
+
+//Funtion with Many Parameters(Multiple)//
+/*function functionName(parm1, parm2, parm3,...){
+    //code goes here
+  }
+  functionName(parm1,parm2,parm3,...) */
+
+
+let morenumbers = [1, 2, 3, 4, 5]
+function sumarrayvalues(arr) {
+    let summ1 = 0
+    for (let i=0; i<arr.length; i++) {
+        summ1 = summ1 + arr[i]
+    }
+    return summ1
+}
+console.log(sumarrayvalues(morenumbers))
+
+
+
+
+//Funtion with Unlimited Parameters (With Regular Function)//
+function sumallnums() {
+    console.log(arguments)
+}
+sumallnums(1, 2, 3, 4)
+
+
+function sumallnumsagain() {
+    let sumagain = 0
+    for (let i=0; i<arguments.length; i++) {
+        sumagain = sumagain + arguments[i]
+    }
+    return sumagain
+}
+console.log(sumallnumsagain(1, 2, 3, 4))
+console.log(sumallnumsagain(1, 1, 1, 1, 1))
+
+
+
+
+//Funtion with Unlimited Parameters (With Arrow Function)//
+/* const sumAllNums = (...args) => {
+ // console.log(arguments), arguments object not found in arrow function
+ // instead we use a parameter followed by spread operator (...)
+ console.log(args)
+}
+
+sumAllNums(1, 2, 3, 4)
+// [1, 2, 3, 4] */
+
+
+let sumallnumsyetagain = (...args) => {
+    let sum = 0
+    for (let element of args) {
+        sum = sum + element
+    }
+    return sum
+}
+console.log(sumallnumsyetagain(10, 20, 10))
+
+
+
+
+
+
+//Anonymous Function. No name Function//
+let anonymousfunc = function() {
+    console.log('I am an anon function and my value is stored in anonymousfunc'
+    )
+}
+console.log(anonymousfunc)
+
+
+
+
+//Expression Funtions. Anon functions that are assigned to a variable//
+let squareagain = function(n) {
+    return n*n
+}
+console.log(squareagain(4))
+
+
+
+
+
+//Self Invoking Functions//
+let squarednum = (function(n) {
+    return n*n
+})(10)
+console.log(squarednum)
