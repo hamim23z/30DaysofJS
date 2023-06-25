@@ -32,3 +32,27 @@ function fullnameprint() {
     console.log(printfullname)
 }
 fullnameprint() //call function//
+
+
+
+
+
+//Function with Returning Values//
+function fullnameagain() {
+    let myfirst = 'Hamim'
+    let mylast = 'Choudhury'
+    let space = ' '
+    let myfull = myfirst + space + mylast
+    return myfull
+}
+console.log(fullnameagain()) //for this type, we dont call the function at the end. we simply use return and we console.log the name of the function at the end.//
+
+
+function addthreenumbers() {
+    let onenum = 10
+    let twonum = 20
+    let threenum = 30
+    let total = onenum + twonum + threenum
+    return total
+}
+console.log(addthreenumbers()) //same thing, return what the total value or what you want to solve and then console.log the name of the function at the end.//
