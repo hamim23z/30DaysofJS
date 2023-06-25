@@ -383,3 +383,54 @@ function totalspeed() {
     return speedcalc
 }
 console.log(totalspeed())
+
+//Number Eleven//
+function substanceweight() {
+    let mass = 40
+    let gravity = 7.981
+    let totalsubweight = mass * gravity
+    return totalsubweight
+}
+console.log(substanceweight())
+
+//Number Twelve//
+function convertcelsiustofarenheit() {
+    let celsius = 300
+    let finalcelstofaren = (celsius * 9/5) + 32
+    return finalcelstofaren
+}
+console.log(convertcelsiustofarenheit())
+
+//Number Thirteen skipped because it's practically the same as Number Fourteen//
+
+//Number Fourteen//
+function checkSeason(month) {
+month = month.toLowerCase();
+  
+if (month === 'december' || month === 'january' || month === 'february') {
+    return 'Winter';
+} else if (month === 'march' || month === 'april' || month === 'may') {
+    return 'Spring';
+} else if (month === 'june' || month === 'july' || month === 'august') {
+    return 'Summer';
+} else if (month === 'september' || month === 'october' || month === 'november') {
+    return 'Autumn';
+} else {
+    return 'Invalid month';
+}
+}
+console.log(checkSeason('january'))
+console.log(checkSeason('august'))
+console.log(checkSeason('march'))
+
+//Number Fifteen//
+function findMax(a, b, c) {
+if (a >= b && a >= c) {
+    return a;
+} else if (b >= a && b >= c) {
+    return b;
+} else {
+    return c;
+}
+}
+console.log(findMax(1, 2, 3))
