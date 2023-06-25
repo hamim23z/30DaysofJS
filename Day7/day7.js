@@ -202,3 +202,79 @@ let squarednum = (function(n) {
     return n*n
 })(10)
 console.log(squarednum)
+
+
+
+
+
+//Arrow Functions: Arrow function is an alternative to write a function, however function declaration and arrow function have some minor differences. Arrow function uses arrow instead of the keyword function to declare a function.*/
+
+//Normal Function//
+function squared(d) {
+    return d * d
+}
+console.log(squared(7))
+
+//Arrow Function//
+let squared2 = d => {
+    return d * d
+}
+console.log(squared2(9))
+
+
+
+
+
+
+
+//Funtion with Default Parameters//
+/* // syntax
+// Declaring a function
+function functionName(param = value) {
+  //codes
+}
+
+// Calling function
+functionName()
+functionName(arg) */
+
+
+function greetings(name = 'Hamim') {
+    let message = `${name}, welcome to 30 Days Of JavaScript!`
+    return message
+}
+console.log(greetings())
+console.log(greetings('Jeffery'))
+
+
+function calculateAge(birthYear, currentYear = 2023) {
+    let age = currentYear - birthYear
+    return age
+}
+console.log('Age: ', calculateAge(2004))
+
+
+
+
+
+//Arrow Functions//
+/* // syntax
+// Declaring a function
+const functionName = (param = value) => {
+  //codes
+}
+
+// Calling function
+functionName()
+functionName(arg) */
+
+let greetings2 = (name2 = 'Peter') => {
+    let message2 = name2 + ', welcome to 30 Days Of JavaScript!'
+    return message2
+}
+console.log(greetings2())
+console.log(greetings2('Asabeneh'))
+
+
+let calculateAge2 = (birthYear2, currentYear2 = 2030) => currentYear2 - birthYear2
+console.log('Age: ', calculateAge2(2000))
