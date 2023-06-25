@@ -321,3 +321,28 @@ function addnumbers(addone, addtwo) {
     return totaladd
 }
 console.log(addnumbers(6, 6))
+
+//Number Four//
+function areaofrectangle() {
+    let length = 7
+    let width = 8
+    let totalarea = length * width
+    return totalarea
+}
+console.log(areaofrectangle())
+
+//Number Five//
+function perimeterofrectangle() {
+    let length2 = 9
+    let width2 = 2
+    let totalperim = 2 * (length2 + width2)
+    return totalperim
+}
+console.log(perimeterofrectangle())
+
+//Number Six//
+function volumeofrectprism(length3, width3, height3) {
+    let totalvolume = length3 * width3 * height3
+    return totalvolume
+}
+console.log(volumeofrectprism(2, 3, 4))
