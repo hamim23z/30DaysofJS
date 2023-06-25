@@ -285,3 +285,39 @@ console.log(greetings2('Asabeneh'))
 
 let calculateAge2 = (birthYear2, currentYear2 = 2030) => currentYear2 - birthYear2
 console.log('Age: ', calculateAge2(2000))
+
+
+
+
+
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
+//Number One//
+function myfullname() {
+    let myfirstname = 'Hamim'
+    let mylastname = 'Choudhury'
+    let space =' '
+    let combinednames = myfirstname + space + mylastname
+    return combinednames
+}
+console.log(myfullname())
+
+//Number Two//
+function myfullnameagain (myfirstname2, mylastname2) {
+    let totalname = myfirstname2 + mylastname2
+    return totalname
+}
+console.log(myfullnameagain('Hamim', ' Choudhury'))
+
+//Number Three//
+function addnumbers(addone, addtwo) {
+    let totaladd = addone + addtwo
+    return totaladd
+}
+console.log(addnumbers(6, 6))
