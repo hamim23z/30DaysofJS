@@ -56,3 +56,27 @@ function addthreenumbers() {
     return total
 }
 console.log(addthreenumbers()) //same thing, return what the total value or what you want to solve and then console.log the name of the function at the end.//
+
+
+
+
+
+
+//Function with a Parameter(One Parameter)// //A parameter can be a number, string, boolean, or object//
+/* function functionName(parm1) {
+  //code goes her
+}
+functionName(parm1) */
+
+
+function areaofcircle(r) {
+    let area = Math.PI * r * r
+    return area
+}
+console.log(areaofcircle(10)) //so with this, when you call the function, you put something in the parenthesis and when you console.log it, you give that something a value and then it will print according to your function//
+
+function squaringnumbers(s) {
+    let exponents = s * s
+    return exponents
+}
+console.log(squaringnumbers(20)) //the same process as above, we put something in the function and we return it (return what we want to solve) and finally we console.log it with an official value//
