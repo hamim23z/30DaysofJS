@@ -346,3 +346,40 @@ function volumeofrectprism(length3, width3, height3) {
     return totalvolume
 }
 console.log(volumeofrectprism(2, 3, 4))
+
+//Number Six//
+function volumeofrectprism(length3, width3, height3) {
+    let totalvolume = length3 * width3 * height3
+    return totalvolume
+}
+console.log(volumeofrectprism(2, 3, 4))
+
+//Number Seven//
+function areaofcirc(r) {
+    let totalarea = Math.PI * r * r
+    return totalarea
+}
+console.log(areaofcirc(10))
+
+//Number Eight//
+function circumofcircle(z) {
+    let circumference = Math.PI * z * 2 
+    return circumference
+}
+console.log(circumofcircle(2))
+
+//Number Nine//
+function densitycalc(mass, volume) {
+    let totaldensity = mass/volume
+    return totaldensity
+}
+console.log(densitycalc(100, 25))
+
+//Number Ten//
+function totalspeed() {
+    let distance = 350
+    let timetaken = 35
+    let speedcalc = distance/timetaken
+    return speedcalc
+}
+console.log(totalspeed())
