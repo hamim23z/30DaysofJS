@@ -37,4 +37,6 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 
 6/28/23: Didn't do anything (celebrating Eid).
 
-6/29/23: Completed Day 8 of the course.
+6/29/23: Completed Day 8 of the course and Level One Exercise Problems.
+
+6/30/23: Completed Level Two and Level Three Exercise Problems from Day 8.
