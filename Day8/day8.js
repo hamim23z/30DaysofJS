@@ -150,3 +150,41 @@ console.log(replica)
 console.log(moreinformation.hasOwnProperty('firstName'))
 console.log(moreinformation.hasOwnProperty('age'))
 console.log(moreinformation.hasOwnProperty('job'))
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
+//Number One//
+let dog = {}
+
+//Number Two//
+console.log(dog)
+
+//Number Three//
+let dog2 = {
+    name: 'Hunter',
+    legs: 4,
+    color: 'White',
+    age: 2,
+    bark: 'Woof Woof'
+}
+
+//Number Four//
+console.log(dog2.name)
+console.log(dog2.legs)
+console.log(dog2.color)
+console.log(dog2.age)
+console.log(dog2.bark)
+
+//Number Five//
+dog2.breed = 'Golden Retriever'
+console.log(dog2)
+
+getDogInfo: function getDogInfo() {
+    return `${this.name} ${this.breed}`
+}
+console.log(getDogInfo)
