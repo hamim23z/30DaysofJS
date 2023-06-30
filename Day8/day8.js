@@ -188,3 +188,149 @@ getDogInfo: function getDogInfo() {
     return `${this.name} ${this.breed}`
 }
 console.log(getDogInfo)
+
+
+
+
+
+
+
+
+
+//LEVEL TWO EXERCISE PROBLEMS//
+const users = {
+    Alex: {
+      email: 'alex@alex.com',
+      skills: ['HTML', 'CSS', 'JavaScript'],
+      age: 20,
+      isLoggedIn: false,
+      points: 30
+    },
+    Asab: {
+      email: 'asab@asab.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+      age: 25,
+      isLoggedIn: false,
+      points: 50
+    },
+    Brook: {
+      email: 'daniel@daniel.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+      age: 30,
+      isLoggedIn: true,
+      points: 50
+    },
+    Daniel: {
+      email: 'daniel@alex.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+      age: 20,
+      isLoggedIn: false,
+      points: 40
+    },
+    John: {
+      email: 'john@john.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+      age: 20,
+      isLoggedIn: true,
+      points: 50
+    },
+    Thomas: {
+      email: 'thomas@thomas.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+      age: 20,
+      isLoggedIn: false,
+      points: 40
+    },
+    Paul: {
+      email: 'paul@paul.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+      age: 20,
+      isLoggedIn: false,
+      points: 40
+    }
+}
+
+//Number One//
+let maxSkills = 0;
+let skillfulPerson = '';
+
+for (const user in users) {
+  const skillsCount = users[user].skills.length;
+  
+  if (skillsCount > maxSkills) {
+    maxSkills = skillsCount;
+    skillfulPerson = user;
+  }
+}
+console.log(skillfulPerson);
+
+
+//Number Two//
+let loggedInCount = 0;
+let highPointsCount = 0;
+
+for (const user in users) {
+  const { isLoggedIn, points } = users[user];
+  
+  if (isLoggedIn) {
+    loggedInCount++;
+  }
+  
+  if (points >= 50) {
+    highPointsCount++;
+  }
+}
+console.log('Logged in users count:', loggedInCount);
+console.log('Users with >= 50 points count:', highPointsCount);
+
+
+//Number Three//
+const mernStackDevelopers = [];
+
+for (const user in users) {
+  const { skills } = users[user];
+  
+  if (
+    skills.includes('MongoDB') &&
+    skills.includes('Express') &&
+    skills.includes('React') &&
+    skills.includes('Node.js')
+  ) {
+    mernStackDevelopers.push(user);
+  }
+}
+console.log(mernStackDevelopers);
+
+
+//Number Four//
+let modifiedusers = {
+    ...users,
+    Hamim: {
+        email: 'hamimc232@gmail.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Python', 'Java', 'PHP'],
+        age: 19,
+        isLoggedIn: false,
+        points: 60
+    }
+}
+console.log(modifiedusers)
+
+
+//Number Five//
+let allkeys = Object.keys(users)
+console.log(allkeys)
+
+
+//Number Six//
+let allvalues = Object.values(users)
+console.log(allvalues)
+
+
+//Number Seven//
+let countries = {
+    name: 'Bangladesh',
+    capital: 'Dhaka',
+    population: '169.4 million',
+    languages: ['Bengali', 'Hindi', 'English']
+}
+console.log(countries)
