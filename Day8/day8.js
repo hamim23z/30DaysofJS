@@ -334,3 +334,182 @@ let countries = {
     languages: ['Bengali', 'Hindi', 'English']
 }
 console.log(countries)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//LEVEL THREE EXERCISE PROBLEMS//
+let personAccount = {
+    firstNames: 'Hamim',
+    lastNames: 'Choudhury',
+    incomes: 'Work',
+    expenses: 900,
+    totalIncome: 50000,
+    totalExpense: 10000,
+    accountInfo: 'Checkings Account',
+    addIncome: 'Savings',
+    addExpense: 'Clothing',
+    accountBalance: 'Classified Intel'  
+}
+console.log(personAccount)
+
+
+
+const users2 = [
+    {
+        _id: 'ab12ex',
+        username: 'Alex',
+        email: 'alex@alex.com',
+        password: '123123',
+        createdAt:'08/01/2020 9:00 AM',
+        isLoggedIn: false
+    },
+    {
+        _id: 'fg12cy',
+        username: 'Asab',
+        email: 'asab@asab.com',
+        password: '123456',
+        createdAt:'08/01/2020 9:30 AM',
+        isLoggedIn: true
+    },
+    {
+        _id: 'zwf8md',
+        username: 'Brook',
+        email: 'brook@brook.com',
+        password: '123111',
+        createdAt:'08/01/2020 9:45 AM',
+        isLoggedIn: true
+    },
+    {
+        _id: 'eefamr',
+        username: 'Martha',
+        email: 'martha@martha.com',
+        password: '123222',
+        createdAt:'08/01/2020 9:50 AM',
+        isLoggedIn: false
+    },
+    {
+        _id: 'ghderc',
+        username: 'Thomas',
+        email: 'thomas@thomas.com',
+        password: '123333',
+        createdAt:'08/01/2020 10:00 AM',
+        isLoggedIn: false
+    }
+    ];
+
+    const products = [
+  {
+    _id: 'eedfcf',
+    name: 'mobile phone',
+    description: 'Huawei Honor',
+    price: 200,
+    ratings: [
+      { userId: 'fg12cy', rate: 5 },
+      { userId: 'zwf8md', rate: 4.5 }
+    ],
+    likes: []
+  },
+  {
+    _id: 'aegfal',
+    name: 'Laptop',
+    description: 'MacPro: System Darwin',
+    price: 2500,
+    ratings: [],
+    likes: ['fg12cy']
+  },
+  {
+    _id: 'hedfcg',
+    name: 'TV',
+    description: 'Smart TV:Procaster',
+    price: 400,
+    ratings: [{ userId: 'fg12cy', rate: 5 }],
+    likes: ['fg12cy']
+  }
+]
+
+//Number Two//
+function signUp(user) {
+    const existingUser = users2.find((u) => u.email === user.email);
+    
+    if (existingUser) {
+      console.log('User already has an account.');
+    } else {
+      users2.push(user);
+      console.log('User added successfully.');
+    }
+}
+
+function signIn(email, password) {
+    const user = users2.find((u) => u.email === email && u.password === password);
+    
+    if (user) {
+      user.isLoggedIn = true;
+      console.log('Sign-in successful.');
+    } else {
+      console.log('Invalid email or password.');
+    }
+}
+
+
+//Number Three//
+function rateProduct(productId, userId, rating) {
+    const product = products.find((p) => p._id === productId);
+    
+    if (product) {
+      const existingRating = product.ratings.find((r) => r.userId === userId);
+      
+      if (existingRating) {
+        existingRating.rate = rating;
+        console.log('Product rating updated successfully.');
+      } else {
+        product.ratings.push({ userId, rate: rating });
+        console.log('Product rated successfully.');
+      }
+    } else {
+      console.log('Product not found.');
+    }
+}
+
+function averageRating(productId) {
+    const product = products.find((p) => p._id === productId);
+  
+    if (product && product.ratings.length > 0) {
+      const sumOfRatings = product.ratings.reduce((total, rating) => total + rating.rate, 0);
+      const average = sumOfRatings / product.ratings.length;
+      return average.toFixed(2); // Return average rating with 2 decimal places
+    } else {
+      return 'No ratings available for this product.';
+    }
+}
+
+
+//Number Four//
+function likeProduct(productId, userId) {
+    const product = products.find((p) => p._id === productId);
+  
+    if (product) {
+      const userLiked = product.likes.includes(userId);
+  
+      if (userLiked) {
+        // User already liked the product, so remove the like
+        product.likes = product.likes.filter((id) => id !== userId);
+        console.log('Product unliked successfully.');
+      } else {
+        // User has not liked the product, so add the like
+        product.likes.push(userId);
+        console.log('Product liked successfully.');
+      }
+    } else {
+      console.log('Product not found.');
+    }
+}
