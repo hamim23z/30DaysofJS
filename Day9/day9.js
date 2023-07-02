@@ -214,6 +214,7 @@ const users = [
     { name: 'Brook Lopez', age: 50 },
     { name: 'Grandma', age: 100 },
     { name: 'Austin', age: 22 },
+    { name: 'Russ', age: 42}
   ]
   users.sort((a, b) => {
     if (a.age < b.age) return -1
