@@ -70,3 +70,59 @@ function sayGoodbye() {
     console.log('Goodbye')
 }
 setTimeout(sayGoodbye, 2000)
+
+
+
+
+
+
+
+//Functional Programming//
+//Instead of writing regular loop, latest version of JavaScript introduced lots of built in methods which can help us to solve complicated problems. All builtin methods take callback function. In this section, we will see forEach, map, filter, reduce, find, every, some, and sort.//
+
+//forEach: Iterate an array elements. We use forEach only with arrays. It takes a callback function with elements, index parameter and array itself. The index and the array optional.//
+/* Multiple Different Syntax
+
+arr.forEach(function (element, index, arr) {
+  console.log(index, element, arr)
+})
+
+// The above code can be written using arrow function
+arr.forEach((element, index, arr) => {
+  console.log(index, element, arr)
+})
+
+// The above code can be written using arrow function and explicit return
+arr.forEach((element, index, arr) => console.log(index, element, arr)) */
+
+let sum = 0
+let morenumbers = [1, 2, 3, 4, 5]
+morenumbers.forEach(num => console.log(num))
+console.log(sum)
+
+let sum2 = 0
+let morenumbers2 = [1, 2, 3, 4, 5]
+morenumbers2.forEach(num => sum += num)
+console.log(sum)
+
+let countries = ['Bangladesh', 'Iraq', 'India', 'USA']
+countries.forEach((element) => console.log(element.toUpperCase()))
+
+
+
+//map: Iterate an array elements and modify the array elements. It takes a callback function with elements, index , array parameter and return a new array.//
+/*Syntax 
+const modifiedArray = arr.map(function (element, index, arr) {
+  return element
+})
+
+Arrow function and explicit return
+const modifiedArray = arr.map((element,index) => element); */
+
+let numlist = [1, 2, 3, 4, 5]
+let numlistsquared = numlist.map((num) => num * num)
+console.log(numlistsquared)
+
+let names = ['Hamim', 'Alexis', 'Johnny', 'Miguel']
+let namesmodified = names.map((names) => names.toUpperCase())
+console.log(namesmodified)
