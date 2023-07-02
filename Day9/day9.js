@@ -78,21 +78,21 @@ setTimeout(sayGoodbye, 2000)
 
 
 //Functional Programming//
-//Instead of writing regular loop, latest version of JavaScript introduced lots of built in methods which can help us to solve complicated problems. All builtin methods take callback function. In this section, we will see forEach, map, filter, reduce, find, every, some, and sort.//
+//Instead of writing regular loop, latest version of JavaScript introduced lots of built-in methods which can help us to solve complicated problems. All builtin methods take callback function. In this section, we will see forEach, map, filter, reduce, find, every, some, and sort.//
 
 //forEach: Iterate an array elements. We use forEach only with arrays. It takes a callback function with elements, index parameter and array itself. The index and the array optional.//
 /* Multiple Different Syntax
 
-arr.forEach(function (element, index, arr) {
+1. arr.forEach(function (element, index, arr) {
   console.log(index, element, arr)
 })
 
-// The above code can be written using arrow function
+2. // The above code can be written using arrow function
 arr.forEach((element, index, arr) => {
   console.log(index, element, arr)
 })
 
-// The above code can be written using arrow function and explicit return
+3. // The above code can be written using arrow function and explicit return
 arr.forEach((element, index, arr) => console.log(index, element, arr)) */
 
 let sum = 0
