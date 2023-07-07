@@ -45,4 +45,13 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 
 7/2/23: Completed Day 9 of the course.
 
-7/3/23: 
+7/3/23: Didn't do anything.
+
+7/4/23: Didn't do anything.
+
+7/5/23: Didn't do anything.
+
+7/6/23: Didn't do anything.
+
+7/7/23: Didn't do anything.
+
