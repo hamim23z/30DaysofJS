@@ -1,4 +1,7 @@
-# 30DaysofJS
+# 30DaysofJS 
+
+**UPDATE: PROGRESS WILL BE SLOW IN THE NEXT 2-3 MONTHS BECAUSE OF AN IN-PERSON INTERNSHIP THAT I AM DOING.**
+
 This is my own experience completing the 30 Days of Javascript post on GitHub. 
 
 6/11/23: Completed Day 1 of the course and all of the exercise problems.
