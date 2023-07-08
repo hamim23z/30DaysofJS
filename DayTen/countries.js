@@ -2012,20 +2012,46 @@ const countries = [
     }
 ]
 
-const languageCounts = {};
-for (const country of countries) {
-  for (const language of country.languages) {
-    if (languageCounts[language]) {
-      languageCounts[language]++;
-    } else {
-      languageCounts[language] = 1;
-    }
-  }
+
+
+
+
+
+//Number One//
+let count = (new Set(countries.reduce((arr, cur) => {
+    arr = arr.concat(cur.languages);
+    return arr;
+ }, []))).size;
+ console.log(count);
+ 
+
+//Number Two//
+function findMostSpokenLanguage(count){
+    const languagesCount = {};
+
+    countries.forEach(country => {
+        country.languages.forEach(language => {
+            if(languagesCount[language]){
+                languagesCount[language]++;
+            }
+            else {
+                languagesCount[language]=1;
+            }
+        })
+    })
+
+
+    const mostSpokenLanguages = Object.keys(languagesCount).sort((a, b) => {
+        
+        if(languagesCount[a] > languagesCount[b]) return -1;
+        if(languagesCount[a] < languagesCount[b]) return 1;
+
+        return 0;   
+}).map(language => {
+        return { [language] : languagesCount[language] }
+})  
+
+
+return mostSpokenLanguages.slice(0, count);     
 }
-const sortedLanguages = Object.keys(languageCounts).sort(
-  (a, b) => languageCounts[b] - languageCounts[a]
-);
-
-const top10Languages = sortedLanguages.slice(0, 10);
-
-console.log(top10Languages);
+findMostSpokenLanguage(5)
