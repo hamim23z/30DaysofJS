@@ -102,3 +102,54 @@ let H = new Set(h)
 let j = a.filter((num) => !H.has(num))
 let J = new Set(j)
 console.log(J)
+
+
+
+
+
+//MAPS//
+//Creating an Empty Map//
+let empmap = new Map()
+console.log(empmap)
+
+
+
+//Creating a Map from an Array//
+let morecountries = [
+    ['Bangladesh', 'India'],
+    ['United States', 'Canada'],
+    ['Norway', 'Oslo']
+]
+let map = new Map(morecountries)
+console.log(map)
+console.log(map.size)
+
+
+
+//Adding Values to a Map//
+let countriesmap = new Map()
+console.log(countriesmap.size)
+
+countriesmap.set('Turkey', 'Iraq')
+countriesmap.set('Greece', 'Ukraine')
+countriesmap.set('France', 'Germany')
+console.log(countriesmap)
+console.log(countriesmap.size)
+
+
+
+//Getting Values from Map//
+console.log(countriesmap.get('Turkey')) //returns Iraq//
+
+
+
+//Checking if Values in a Map//
+console.log(countriesmap.has('Turkey')) //true//
+console.log(countriesmap.has('Bangladesh')) //false//
+
+
+
+//Getting all Values from Map using Loop//
+for (let country of countriesmap) {
+    console.log(country)
+}
