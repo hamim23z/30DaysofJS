@@ -179,10 +179,6 @@ for (let i = 0; i <= 10; i++) {
 }
 console.log(numberSet);
 
-const x = [4, 5, 8, 9]
-const y = [3, 4, 5, 7]
-const countries7 = ['Finland', 'Sweden', 'Norway']
-
 //Number Three//
 let anotherset = ['hello', 'hola', 'hi']
 let set100 = new Set(anotherset)
@@ -211,3 +207,38 @@ let countriesagain = [
 ]
 let newmap = new Map(countriesagain)
 console.log(newmap)
+
+
+
+
+
+
+
+
+
+
+//LEVEL TWO EXERCISE PROBLEMS//
+const x = [4, 5, 8, 9]
+const y = [3, 4, 5, 7]
+const countries7 = ['Finland', 'Sweden', 'Norway']
+
+//Number One//
+let z = [...y, ...x]
+let X = new Set(x)
+let Y = new Set(y)
+let Z = new Set(z)
+console.log(Z)
+
+//Number Two//
+let K = new Set(x)
+let L = new Set(y)
+let m = x.filter((num) => L.has(num))
+let M = new Set(m)
+console.log(M)
+
+//Number Three//
+let N = new Set(x)
+let O = new Set(y)
+let p = x.filter((num) => !O.has(num))
+let P = new Set(p)
+console.log(P)
