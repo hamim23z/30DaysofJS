@@ -168,3 +168,46 @@ for (let country of countriesmap) {
 
 
 //LEVEL ONE EXERCISE PROBLEMS//
+//Number One//
+let emptyset = new Set()
+console.log(emptyset)
+
+//Number Two//
+let numberSet = new Set();
+for (let i = 0; i <= 10; i++) {
+  numberSet.add(i);
+}
+console.log(numberSet);
+
+const x = [4, 5, 8, 9]
+const y = [3, 4, 5, 7]
+const countries7 = ['Finland', 'Sweden', 'Norway']
+
+//Number Three//
+let anotherset = ['hello', 'hola', 'hi']
+let set100 = new Set(anotherset)
+console.log(set100)
+console.log(set100.delete('hi'))
+console.log(set100)
+
+//Number Four//
+let yetanotherset = [1, 2, 3, 4, 5, 6]
+let set200 = new Set(yetanotherset)
+console.log(set200)
+
+/*yetanotherset.clear()
+console.log(yetanotherset) */
+
+//Number Five//
+let techlanguages = ['HTML', 'CSS', 'JS', 'Python', 'Java']
+let newset = new Set(techlanguages)
+console.log(newset)
+
+//Number Six//
+let countriesagain = [
+    ['USA', 3],
+    ['Bangladesh', 10],
+    ['India', 5]
+]
+let newmap = new Map(countriesagain)
+console.log(newmap)
