@@ -242,3 +242,10 @@ let O = new Set(y)
 let p = x.filter((num) => !O.has(num))
 let P = new Set(p)
 console.log(P)
+
+
+
+
+
+//LEVEL THREE EXERCISE PROBLEMS//
+//Located in countries.js//
