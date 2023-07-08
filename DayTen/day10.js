@@ -153,3 +153,18 @@ console.log(countriesmap.has('Bangladesh')) //false//
 for (let country of countriesmap) {
     console.log(country)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
