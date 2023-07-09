@@ -187,3 +187,32 @@ let sumAllNums = (...args) => {
     console.log(args)
 }
 sumAllNums(1, 2, 3, 4, 5)
+
+
+
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
+//Number One//
+let someconstants = [2.72, 3.14, 9.81, 37, 100]
+let [e, pi, gravity, humanbodytempinc, waterboilingtemp] = someconstants
+console.log(e, pi, gravity, humanbodytempinc, waterboilingtemp)
+
+//Number Two//
+let samecountries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+let [fin, est, sw, den, nor] = samecountries
+console.log(fin, est, sw, den, nor)
+
+//Number Three//
+let rectangle100 = {
+    width4: 20,
+    length4: 40,
+    area4: 800
+}
+let {width4, length4, area4} = rectangle100
+console.log(width4, length4, area4)
