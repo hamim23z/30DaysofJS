@@ -216,3 +216,60 @@ let rectangle100 = {
 }
 let {width4, length4, area4} = rectangle100
 console.log(width4, length4, area4)
+
+
+
+//LEVEL TWO EXERCISE PROBLEMS//
+const users = [
+    {
+      name:'Brook',
+      scores:75,
+      skills:['HTM', 'CSS', 'JS'],
+      age:16
+    },
+    {
+      name:'Alex',
+      scores:80,
+      skills:['HTM', 'CSS', 'JS'],
+      age:18
+    },
+    {
+      name:'David',
+      scores:75,
+      skills:['HTM', 'CSS'],
+      age:22
+    },
+    {
+      name:'John',
+      scores:85,
+      skills:['HTML'],
+      age:25
+    },
+    {
+      name:'Sara',
+      scores:95,
+      skills:['HTM', 'CSS', 'JS'],
+      age: 26
+    },
+    {
+      name:'Martha',
+      scores:80,
+      skills:['HTM', 'CSS', 'JS'],
+      age:18
+    },
+    {
+      name:'Thomas',
+      scores:90,
+      skills:['HTM', 'CSS', 'JS'],
+      age:20
+    }
+]
+
+//Number One//
+for (let {name, scores, skills, age} of users) {
+    console.log(name, scores, skills, age)
+}
+
+//Number Two//
+let usersWithLessThanTwoSkills = users.filter(user => user.skills.length < 2)
+console.log(usersWithLessThanTwoSkills);
