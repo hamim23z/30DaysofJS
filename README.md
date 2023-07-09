@@ -60,4 +60,4 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 
 7/8/23: Completed Day 10 of the course and all exercise problems. Solutions to the Level Three Problems are found in the countries.js file. Also renamed all folder and file names to make it more organized.
 
-7/9/23: Completed Day 11 of the course.
+7/9/23: Completed Day 11 of the course and all exercise problems.
