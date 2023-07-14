@@ -34,11 +34,7 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 
 6/25/23: Completed Day 7 of the course and Level One Exercise Problems.
 
-6/26/23: Didn't do anything.
-
-6/27/23: Didn't do anything (was at work).
-
-6/28/23: Didn't do anything (celebrating Eid).
+6/26/23 - 6/28/23: Didn't do anything.
 
 6/29/23: Completed Day 8 of the course and Level One Exercise Problems.
 
@@ -48,16 +44,12 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 
 7/2/23: Completed Day 9 of the course.
 
-7/3/23: Didn't do anything.
-
-7/4/23: Didn't do anything.
-
-7/5/23: Didn't do anything.
-
-7/6/23: Didn't do anything.
-
-7/7/23: Didn't do anything.
+7/3/23 - 7/7/23: Didn't do anything.
 
 7/8/23: Completed Day 10 of the course and all exercise problems. Solutions to the Level Three Problems are found in the countries.js file. Also renamed all folder and file names to make it more organized.
 
 7/9/23: Completed Day 11 of the course and all exercise problems.
+
+7/10/23 - 7/13/23: Didn't do anything.
+
+7/14/23: Completed Day 12 of the course. 
