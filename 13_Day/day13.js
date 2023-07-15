@@ -275,3 +275,34 @@ console.warn('We are now doing #2 from Level 2 Exercise Problems')
 
 //Number Three//
 console.error('There are no more questions for Level Two after this.')
+
+
+
+//LEVEL THREE EXERCISE PROBLEMS//
+let array = Array.from({ length: 1000000 }, (_, index) => index + 1);
+
+//While Loop//
+console.time('while');
+let i = 0;
+while (i < array.length) {
+  i++;
+}
+console.timeEnd('while');
+
+//For Loop//
+console.time('for');
+for (let i = 0; i < array.length; i++) {
+}
+console.timeEnd('for');
+
+//For Of Loop//
+console.time('for...of');
+for (let element of array) {
+}
+console.timeEnd('for...of');
+
+//For Each Loop//
+console.time('forEach');
+array.forEach((element) => {
+});
+console.timeEnd('forEach');
