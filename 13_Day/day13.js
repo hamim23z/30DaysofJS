@@ -228,3 +228,50 @@ func()
 //The console.clear() cleans the browser console.//
 
 //I will not be doing this but its straightforward and I don't want to clear my console.//
+
+
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
+//Number One//
+let countries100 = [
+    ['Bangladesh', 'Dhaka'],
+    ['Australia', 'Sydney'],
+    ['United States', 'Washington DC'],
+    ['United States', 'Washington DC']
+]
+console.table(countries100)
+
+//Number Two//
+let countriesobject = {
+    name: 'United States of America',
+    capital: 'Washington D.C',
+    states: 50,
+    age: 'Very Old',
+    population: 331900000,
+    diversity: 'High',
+}
+console.table(countriesobject)
+
+//Number Three//
+console.group('My Group');
+console.log('Log 1');
+console.log('Log 2');
+console.groupEnd();
+
+
+
+//LEVEL TWO EXERCISE PROBLEMS//
+//Number One//
+console.assert( 10 > 2 * 10, '10 is not greather than 20')
+
+//Number Two//
+console.warn('We are now doing #2 from Level 2 Exercise Problems')
+
+//Number Three//
+console.error('There are no more questions for Level Two after this.')
