@@ -55,3 +55,5 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 7/14/23: Completed Day 12 of the course. 
 
 7/15/23: Completed Day 13 of the course and all exercise problems.
+
+7/16/23 - 7/20/23: Completed Day 14 of the course and all exercise problems.
