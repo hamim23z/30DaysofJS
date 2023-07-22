@@ -59,3 +59,5 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 7/16/23 - 7/20/23: Didn't do anything.
 
 7/21/23: Completed Day 14 of the course and all exercise problems.
+
+7/22/23: Completed Day 15 of the course. Will do exercise problems another time because Day 15 was challenging, need to watch videos and practice more. 
