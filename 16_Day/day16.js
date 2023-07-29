@@ -207,3 +207,52 @@ let user2 = {
   
 let txt2 = JSON.stringify(user2,['firstName', 'lastName', 'country', 'city', 'age'],4)
 console.log(txt2)
+
+
+
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
+//Number One//
+let skills100 = ['HTML', 'CSS', 'JS', 'React','Node', 'Python']
+let skillstext = JSON.stringify(skills100, undefined, 6)
+console.log(skillstext)
+
+//Number Two//
+let age = 250;
+const agetext = JSON.stringify(age)
+console.log(agetext)
+
+//Number Three//
+let isMarried = true
+const ismarriedtext = JSON.stringify(isMarried)
+console.log(ismarriedtext);
+
+//Number Four//
+let student4 = {
+    firstName:'Asabeneh',
+    lastName:'Yetayehe',
+    age:250,
+    isMarried:true,
+    skills:['HTML', 'CSS', 'JS', 'React','Node', 'Python', ]
+}
+
+let studenttext4 = JSON.stringify(student4)
+console.log(studenttext4)
+
+
+
+
+//LEVEL TWO EXERCISE PROBLEMS//
+let student5 = JSON.stringify(student4, (key, value)=>{
+    if(key === 'age' || key === 'isMarried') return;
+
+    return value
+})
+student5
+console.log(student5)
