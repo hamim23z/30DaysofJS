@@ -107,3 +107,44 @@ console.log(firstname, age, myskills2)
 //Clearing the localStorage//
 //The clear method, will clear everything stored in the local storage//
 localStorage.clear()
+
+
+
+
+
+
+
+
+
+
+//LEVEL ONE EXERCISE PROBLEMS//
+localStorage.setItem('myfirstname', 'Hamim')
+localStorage.setItem('mylastname', 'Choudhury')
+localStorage.setItem('mycountry', 'United States')
+localStorage.setItem('mycity', 'New York City')
+console.log(localStorage)
+
+
+//LEVEL TWO EXERCISE PROBLEMS//
+let student = {
+    firstname3 : 'John',
+    lastname3 : 'Doe',
+    age3: 27,
+    skills3: ['HTML', 'CSS', 'JS', 'Java'],
+    country3: 'Australia'
+}
+let studenttext = JSON.stringify(student, undefined, 4)
+localStorage.setItem('student', studenttext)
+console.log(localStorage)
+
+
+//LEVEL THREE EXERCISE PROBLEMS//
+let personAccount = {
+    firstname4: 'Jane',
+    lastname4: 'Smithson',
+    income: ('Work', 300000, 'Stocks', 20000),
+    expenses: ('Food', 30000, 'Extras', 40000)
+}
+let personAccounttext = JSON.stringify(personAccount, undefined, 4)
+localStorage.setItem('personAccount', personAccounttext)
+console.log(localStorage)
