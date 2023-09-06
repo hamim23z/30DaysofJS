@@ -71,3 +71,5 @@ This is my own experience completing the 30 Days of Javascript post on GitHub.
 Stuff Happened, too busy
 
 9/4/23: Completed Day 20 of the course. There were no exercise problems. 
+
+9/5/23: Completed Day 21 of the course.
