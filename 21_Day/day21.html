@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 21 of JavaScript</title>
+</head>
+
+<body>
+
+    <div>
+
+        <h1 class="title" id="first-title">First Title</h1>
+        <h1 class="title" id="second-title">Second Title</h1>
+        <h1 class="title" id="third-title">Third Title</h1>
+        <h1></h1>
+
+    </div>
+
+
+    <script>
+        //Getting Elements by Tag Name//
+        let allTitles = document.getElementsByTagName('h1')
+        console.log(allTitles)
+        console.log(allTitles.length)
+
+
+        //Getting Elements by Class Name//
+        let allTitles2 = document.getElementsByClassName('title')
+        console.log(allTitles2)
+        console.log(allTitles2.length)
+
+
+        //Getting Elements by ID//
+        let firstid = document.getElementById('first-title')
+        console.log(firstid)
+
+
+        //Getting Elements by Query Selector//
+        let firstTitle = document.querySelector('h1')
+        let firstTitle2 = document.querySelector('#first-title')
+        console.log(firstTitle)
+        console.log(firstTitle2)
+
+
+
+        //Adding Text to HTML Elements//
+        let titles3 = document.querySelectorAll('h1')
+        titles3[3].textContent = 'Fourth Title'
+
+
+
+        //Adding Style//
+        const titles = document.querySelectorAll('h1')
+        titles.forEach((title, i) => {
+            if (i % 2 === 0) {
+                title.style.color = 'green'
+            } else {
+                title.style.color = 'red'
+            }
+        })
+    </script>
+</body>
+
+</html>
