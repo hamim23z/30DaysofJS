@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level One and Two Exercise Problems - Day 21 of JS</title>
+</head>
+
+<body>
+    <p class="paragraph" id="first-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p class="paragraph" id="second-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p class="paragraph" id="third-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <p></p>
+
+
+    <script>
+        //Number One//
+        let numberone = document.querySelectorAll('p')[0]
+        console.log(numberone)
+
+
+        //Number Two//
+        let numbertwo = document.querySelector('#first-paragraph')
+        console.log(numbertwo)
+
+        let = numbertwob = document.querySelector('#second-paragraph')
+        console.log(numbertwob)
+
+        let numbertwoc = document.querySelector('#third-paragraph')
+        console.log(numbertwoc)
+
+
+        //Number Three//
+        let numberthree = document.querySelectorAll('p')
+        console.log(numberthree)
+
+
+        //Number Four//
+        let p = document.querySelectorAll('p')
+        p.forEach(p => {
+            console.log(p.textContent)
+        })
+
+
+        //Number Five//
+        let paragraphs = document.querySelectorAll('p')
+        paragraphs[3].textContent = 'Fourth Paragraph'
+
+
+        //Number Six//
+        let paragraphs2 = document.querySelectorAll('p')
+        paragraphs2[3].setAttribute('class', 'paragraph')
+        paragraphs2[3].setAttribute('id', 'fourth-paragraph')
+        console.log(paragraphs2)
+
+
+
+
+        //LEVEL TWO EXERCISE PROBLEMS//
+        //Number One//
+        p.forEach((p, k) => {
+            if (k % 2 === 0) {
+                p.style.color = 'blue'
+            } else {
+                p.style.color = 'orange'
+            }
+
+        })
+
+        p.forEach((p, l) => {
+            if (l % 3 === 0) {
+                p.style.backgroundColor = 'grey'
+            } else {
+                p.style.backgroundColor = 'pink'
+            }
+        })
+
+
+        //Number Three//
+        let firstp = document.querySelectorAll('p')
+        firstp[0].textContent = 'First Paragraph'
+
+        let secondp = document.querySelectorAll('p')
+        secondp[1].textContent = 'Second Paragraph'
+
+        let thirdp = document.querySelectorAll('p')
+        thirdp[2].textContent = 'Third Paragraph'
+
+        //Paragraph 4 already has text content, class and ID as shown by Level One Exercise Numbers Five and Six. Paragraphs 1, 2, and 3, also have class and ID.//
+
+
+
+    </script>
+</body>
+
+</html>
