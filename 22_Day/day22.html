@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22 of JavaScript</title>
+</head>
+
+<body>
+
+    <body>
+        <h1>Removing child Node</h1>
+        <h2>Asabeneh Yetayeh challenges in 2020</h1>
+            <ul>
+                <li>30DaysOfPython Challenge Done</li>
+                <li>30DaysOfJavaScript Challenge Done</li>
+                <li>30DaysOfReact Challenge Coming</li>
+                <li>30DaysOfFullStack Challenge Coming</li>
+                <li>30DaysOfDataAnalysis Challenge Coming</li>
+                <li>30DaysOfReactNative Challenge Coming</li>
+                <li>30DaysOfMachineLearning Challenge Coming</li>
+            </ul>
+
+
+            <script>
+                //Creating an Element//
+                let newtitle = document.createElement('h1')
+                newtitle.className = 'newtitle'
+                newtitle.id = 'first-title'
+                newtitle.style.fontSize = '50px'
+                newtitle.style.color = 'green'
+                newtitle.textContent = 'This is the first title.'
+                console.log(newtitle)
+
+
+                //Creating Multiple Elements//
+                let multipletitles
+                for (let i = 0; i < 5; i++) {
+                    multipletitles = document.createElement('h2')
+                    multipletitles.className = 'multipletitles'
+                    multipletitles.id = 'multipletitlesagain'
+                    multipletitles.fontSize = '60px'
+                    multipletitles.style.color = 'blue'
+                    multipletitles.textContent = 'Greetings.'
+                    console.log(multipletitles)
+                }
+
+
+                //Appending Child to Parent Element//
+                let titleappend
+                for (let i = 0; i < 3; i++) {
+                    titleappend = document.createElement('h1')
+                    titleappend.className = 'title'
+                    titleappend.style.fontSize = '24px'
+                    titleappend.textContent = i
+                    document.body.appendChild(titleappend)
+                }
+
+
+                //Removing a Child Element//
+                const ul = document.querySelector('ul')
+                const lists = document.querySelectorAll('li')
+                for (const list of lists) {
+                    ul.removeChild(list)
+                }
+
+            </script>
+    </body>
+
+</html>
