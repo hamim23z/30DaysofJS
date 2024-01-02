@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level One Exercise Problems - Day 22 of JavaScript</title>
+</head>
+
+<body>
+    <h1>Number Generator</h1>
+    <h2>30 Days Of JavaScript : DOM Day 2</h2>
+    <h3>Author: Hamim Choudhury</h3>
+    <div class="wrapper"></div>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            display: grid;
+            place-items: center;
+            background-color: beige;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            margin-top: -10px;
+        }
+
+        h3 {
+            margin-top: -5px;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            min-width: fit-content;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        div {
+            width: 100px;
+            height: 70px;
+            justify-content: center;
+            place-items: center;
+            display: grid;
+        }
+    </style>
+
+
+    <script>
+        let wrapperdiv = document.querySelector('.wrapper')
+
+        for (let i = 0; i < 102; i++) {
+            let divelement = document.createElement('div')
+
+            if (i % 2 === 0) divelement.style.background = 'green'
+            if (i % 2 !== 0) divelement.style.background = 'yellow'
+
+            divelement.textContent = i
+            wrapperdiv.appendChild(divelement)
+        }
+
+        function generatePrimes(count) {
+            const primes = [];
+            for (let i = 2; i <= count; i++) {
+                let isPrime = true;
+                for (let j = 2; j <= Math.sqrt(i); j++) {
+                    if (i % j === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime) {
+                    primes.push(i);
+                }
+            }
+            return primes;
+        }
+
+        const generatedPrimeNumbers = generatePrimes(102)
+
+        generatedPrimeNumbers.forEach(prime => {
+            wrapperdiv.children[prime].style.background = 'red'
+        })
+
+    </script>
+</body>
+
+</html>
