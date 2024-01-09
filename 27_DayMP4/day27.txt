@@ -1,1 +1,3 @@
-Day 27's project is to create a Portfolio. However, I already have an online Resume. I know that it's not exactly a Portfolio, but that's what I use for now. Therefore, I will be skipping this project and skipping Day 27. 
+Day 27's project is to create a Portfolio. However, I already have an online Resume.
+I know that it's not exactly a Portfolio, but that's what I use for now. 
+Therefore, I will be skipping this project and skipping Day 27. 
